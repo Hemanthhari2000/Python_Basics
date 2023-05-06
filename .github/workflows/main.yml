@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: hemanthhari2000/recommend-repo-action@v0.0.3
+        uses: hemanthhari2000/recommend-repo-action@v0.0.4
         with:
           who-to-greet: "Hemanth"
       # Use the output from the `hello` step
