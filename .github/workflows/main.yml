@@ -1,6 +1,8 @@
 on:
-  pull_request:
-    types: [opened]
+  # pull_request:
+  #   types: [opened]
+  issue_comment:
+    types: [created, deleted, edited]
 
 jobs:
   hello_world_job:
