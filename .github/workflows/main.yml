@@ -3,17 +3,13 @@ on:
     types: [opened]
 
 jobs:
-  hello_world_job:
+  recommend_repo_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job that recommends similar issues based on current pull request
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: hemanthhari2000/recommend-repo-action@v0.0.4
-        with:
-          who-to-greet: "Hemanth"
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: Recommend repo action step
+        id: recommend
+        uses: hemanthhari2000/recommend-repo-action@v0.0.5
+
       - name: Get Recommendation List
-        run: echo "The recommendations are ${{ steps.hello.outputs.recommendations }}"
+        run: echo "The recommendations are ${{ steps.recommend.outputs.recommendations }}"
