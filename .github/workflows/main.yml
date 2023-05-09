@@ -14,7 +14,7 @@ jobs:
         uses: hemanthhari2000/recommend-repo-action@v0.0.5
 
       - name: Get Recommendation List
-        run: echo 'The recommendations are "${{ steps.recommend.outputs.recommendations }}"'
+        run: echo 'The recommendations are ${{ steps.recommend.outputs.recommendations }}'
  
       - uses: mshick/add-pr-comment@v2
         with:
