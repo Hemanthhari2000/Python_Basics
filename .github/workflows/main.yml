@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Recommend repo action step
         id: recommend
-        uses: hemanthhari2000/recommend-repo-action@v0.0.7
+        uses: hemanthhari2000/recommend-repo-action@v0.0.8
 
       - uses: mshick/add-pr-comment@v2
         with:
