@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Recommend repo action step
         id: recommend
-        uses: hemanthhari2000/recommend-repo-action@v0.0.5
+        uses: hemanthhari2000/recommend-repo-action@v0.0.6
 
       - name: Get Recommendation List
         run: echo 'The recommendations are ${{ steps.recommend.outputs.recommendations }}'
